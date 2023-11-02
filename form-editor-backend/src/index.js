@@ -10,6 +10,8 @@ import { resolve } from "path"
 import { Form, Response } from './models/Question.js';
 import { check } from './helper/checkbase64.js';
 
+const PORT = process.env.PORT || 8080
+
 const app = express()
 
 const S3_URL = process.env.AWS_S3_URL
@@ -112,6 +114,6 @@ app.get("/form/:id", async (req, res) => {
     }
 })
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log('Server is listening on port 8080')
 })
