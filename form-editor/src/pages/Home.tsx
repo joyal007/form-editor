@@ -17,7 +17,9 @@ function Home() {
         
         fetch(API_URL+"forms",{
           method: "POST",
+          mode: "cors",
           headers: {
+            "Access-Control-Allow-Origin": '*',
             "Content-Type": "application/json",
           },
           body: JSON.stringify({forms})

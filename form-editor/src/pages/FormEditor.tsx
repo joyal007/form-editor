@@ -17,7 +17,7 @@ function FormEditor() {
   const imageRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    fetch(API_URL + "form/" + params.id)
+    fetch(API_URL + "form/" + params.id,{mode: "cors"})
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -108,6 +108,7 @@ function FormEditor() {
                   headers: {
                     "Content-Type": "application/json",
                   },
+                  mode: "cors",
                   body: JSON.stringify(formData),
                 });
               }}

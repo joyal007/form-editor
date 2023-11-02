@@ -7,7 +7,7 @@ function Responses() {
   const params = useParams();
   const [res, setRes] = React.useState();
   React.useEffect(() => {
-    fetch(API_URL + "forms/responses/" + params.id)
+    fetch(API_URL + "forms/responses/" + params.id, {mode: "cors",})
       .then((res) => res.json())
       .then((res) => {
         console.log(res.response);

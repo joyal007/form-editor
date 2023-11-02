@@ -44,7 +44,7 @@ function Preview() {
 
   console.log("response", response)
   useEffect(() => {
-    fetch(API_URL + "form/" + params.id).then(res => {
+    fetch(API_URL + "form/" + params.id, {mode: "cors",}).then(res => {
       if(res.ok){
         return res.json()
       }else if(res.status == 404){
@@ -108,6 +108,7 @@ function Preview() {
         <Button onClick={() => {
           fetch(API_URL +"form/submit", {
             method: "POST",
+            mode: "cors",
             body: JSON.stringify(response),
             headers: {
               "Content-Type": "application/json"
