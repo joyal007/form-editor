@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import QuestionSelector from "./QuestionSelector";
 import { Input } from "./ui/input";
 import { GripVerticalIcon, Image, Plus, XIcon } from "lucide-react";

@@ -1,5 +1,5 @@
 import { CategorizeType, ClozeType, ComprehensiveType } from "@/types/Question";
-import React from "react";
+
 import CategoryPreview from "./CategoryPreview";
 import ClozePreview from "./ClozePreview";
 import ComprehensivePreview from "./ComprehensivePreview";

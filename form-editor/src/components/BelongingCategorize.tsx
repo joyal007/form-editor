@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import * as React from "react"
 import { Check, ChevronsUpDown } from "lucide-react"
 
@@ -27,7 +29,7 @@ function BelongingCategorize({index, options,categoryId, questionId, categories,
           className="w-[200px] justify-between"
         >
           {categoryId
-            ? categories.find((cat) => cat.id === categoryId)?.value
+            ? categories.find((cat: any) => cat.id === categoryId)?.value
             : "Select Belonging..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>

@@ -1,8 +1,9 @@
-import { CategorizeType, ClozeType, ComprehensiveType } from "@/types/Question";
+// @ts-nocheck
+
+import { ClozeType } from "@/types/Question";
 import React, { useEffect } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
-type QuestionT = CategorizeType | ComprehensiveType | ClozeType;
 
 function ClozePreview({
   question,

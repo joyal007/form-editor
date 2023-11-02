@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useLocalStorage(key, defaultValue = null) {
+function useLocalStorage(key: any, defaultValue = null) {
     // Retrieve data from localStorage when the component mounts
     const [data, setData] = useState(() => {
       const storedData = localStorage.getItem(key);

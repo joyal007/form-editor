@@ -2,7 +2,6 @@ import { CategorizeType, ClozeType, ComprehensiveType } from "@/types/Question";
 import CategorizeEdit from "@/components/CategorizeEdit";
 import ClozeEdit from "@/components/ClozeEdit";
 import ComprehensiveEdit from "@/components/ComprehensionEdit";
-import React from "react";
 
 type QuestionT = CategorizeType | ComprehensiveType | ClozeType;
 

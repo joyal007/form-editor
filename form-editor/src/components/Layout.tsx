@@ -1,9 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
 import { ClipboardEditIcon } from "lucide-react";
-import { nanoid } from "nanoid";
-import { Button } from "./ui/button";
-import { useNavigate } from "react-router-dom";
-import useLocalStorage from "../hooks/LocalStorage";
 
 const Layout = () => {
   return (

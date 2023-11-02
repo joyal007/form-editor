@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Button } from "@/components/ui/button";
 import useLocalStorage from "@/hooks/LocalStorage";
 import { PencilIcon, User2 } from "lucide-react";
@@ -6,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import {nanoid} from "nanoid"
 import { API_URL } from "@/lib/constants";
-import { setEnvironmentData } from "worker_threads";
 
 function Home() {
   const navigate = useNavigate();

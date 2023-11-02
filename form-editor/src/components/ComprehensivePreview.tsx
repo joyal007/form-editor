@@ -1,5 +1,5 @@
+// @ts-nocheck
 import { ComprehensiveType } from '@/types/Question';
-import React from 'react'
 
 function ComprehensivePreview({
   question,

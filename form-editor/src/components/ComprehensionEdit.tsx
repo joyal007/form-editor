@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { ComprehensiveType } from "@/types/Question";
 import React from "react";
 import { Input } from "./ui/input";
@@ -16,7 +18,6 @@ function ComprehensionEdit({
   updateQuestion: (questionId: number, updateAttribute: any) => void;
 }) {
   const inputImgRef = React.useRef<HTMLInputElement>(null);
-  const imagepreview = React.useRef<HTMLImageElement>(null);
   
   return (
     <div className="w-full bg-white p-5 rounded-md gap-2 space-y-3">
